@@ -1,0 +1,75 @@
+Time: 10/11/2024 07:16:34:971 PM
+---------------------------Failed-------------------------------------------------------
+Message: Select COUNT (ID) as LDAPCount from ICC_LDAP_Setting WHERE NA='Y'
+Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+StackTrace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at UIDESK.auth_login.Login_ButtonSubmit_ServerClick(Object sender, EventArgs e) in C:\Bravo2024\bravo\UIDESK\auth_login.aspx.vb:line 100
+Source: System.Data
+TargetSite: Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+---------------------------Failed-------------------------------------------------------
+
+Time: 10/11/2024 07:18:16:167 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (ID) as LDAPCount from ICC_LDAP_Setting WHERE NA='Y'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:18:16:189 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName='admin' and Password='UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:18:16:560 PM
+---------------------------Success-------------------------------------------------------
+Message: EXEC SP_LOGIN_APPLIKASI  'admin', 'UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:18:16:962 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='Admin' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:20:53:300 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (ID) as LDAPCount from ICC_LDAP_Setting WHERE NA='Y'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:20:53:313 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName='admin' and Password='UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:20:53:387 PM
+---------------------------Success-------------------------------------------------------
+Message: EXEC SP_LOGIN_APPLIKASI  'admin', 'UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 07:20:53:500 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='Admin' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 10:01:02:032 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (ID) as LDAPCount from ICC_LDAP_Setting WHERE NA='Y'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 10:01:02:044 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName='admin' and Password='UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 10:01:02:114 PM
+---------------------------Success-------------------------------------------------------
+Message: EXEC SP_LOGIN_APPLIKASI  'admin', 'UIdesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 10/11/2024 10:01:02:186 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='Admin' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
